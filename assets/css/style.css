@@ -1,0 +1,44 @@
+:root {
+    /*  --VARIABLE: VALUE;  */
+    --primary-dark: rgb(0, 0, 110);
+    --primary-light: rgb(196, 196, 196);
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    background: var(--primary-dark);
+}
+
+header li {
+    list-style-type: none;
+}
+
+header a {
+    color: var(--primary-light);
+}
+
+.round {
+    border-radius: 50%;
+}
+
+footer {
+    background: var(--primary-dark);
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer a,
+footer p {
+    color: var(--primary-light);
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 479px) {
+}
