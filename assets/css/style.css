@@ -1,4 +1,11 @@
-/* BEGIN CORE STYLING*/
+/* TODO */
+/* Make the first project tile bigger */
+/* Make generic project page to link to */
+/* Maybe bring in a small project or 2 (dice and B5 jumble) */
+/* Build responsive for tablet and desktop */
+/* Create README.md */
+
+/* BEGIN GENERAL STYLING*/
 :root {
     --primary-dark: rgb(0, 0, 110);
     --primary-light: rgb(196, 196, 196);
@@ -14,9 +21,14 @@ body {
     padding: 0.5rem;
 }
 
+p {
+    padding-top: 1rem;
+    line-height: 1.2rem;
+}
+
 /* BEGIN HEADER/NAV STYLING*/
 header {
-    width: 100vw;
+    width: 100%;
     background: var(--primary-dark);
 }
 
@@ -43,7 +55,7 @@ header a {
     background-color: #fff;
     background-size: cover;
     background-position: center;
-    width: 100vw;
+    width: 100%;
 }
 
 .jumbotron > p {
@@ -59,29 +71,18 @@ header a {
 
 .j-title {
     margin: 1.25rem 2rem 0 2rem;
-    font-size: 2.5em;
-    font-weight: bold;
+    font-size: 1.5rem;
     margin-bottom: 0;
     color: #fff;
 }
 .j-subtitle {
-    font-size: 1.5em;
     margin: 0.5rem 2rem 2rem 2rem;
 }
 /* END JUMBOTRON */
 
 /* BEGIN MAIN STYLING*/
 section {
-    width: 85vw;
-}
-
-section p {
-    padding-top: 1rem;
-    line-height: 1.2rem;
-    /* margin-left: 2rem; */
-}
-
-.section-padding-top {
+    width: 85%;
     padding: 0.5rem;
 }
 
@@ -100,16 +101,16 @@ section p {
     margin-top: 0.5rem;
 }
 
-.project {
+.project-tile {
     max-width: 30%;
     height: auto;
 }
 
-.project img {
+.project-tile img {
     width: 100%;
 }
 
-.project p {
+.project-tile p {
     line-height: 1.2rem;
 }
 /* END MAIN STYLING*/
@@ -130,44 +131,6 @@ footer p {
     padding-top: 0.5rem;
 }
 /* END FOOTER STYLING*/
-
-/* Flexbox micro classes */
-.flex {
-    display: flex;
-}
-
-.row {
-    flex-flow: row nowrap;
-}
-
-.row-wrap {
-    flex-flow: row wrap;
-}
-
-.column {
-    flex-flow: column nowrap;
-}
-
-.align-center {
-    align-items: center;
-}
-
-.space-around {
-    justify-content: space-around;
-}
-
-.space-between {
-    justify-content: space-between;
-}
-
-.space-evenly {
-    justify-content: space-evenly;
-}
-
-.center {
-    align-items: center;
-    justify-content: center;
-}
 
 @media screen and (min-width: 768px) {
 }

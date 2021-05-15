@@ -1,0 +1,37 @@
+/* Flexbox micro classes */
+.flex {
+    display: flex;
+}
+
+.row {
+    flex-flow: row nowrap;
+}
+
+.row-wrap {
+    flex-flow: row wrap;
+}
+
+.column {
+    flex-flow: column nowrap;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
