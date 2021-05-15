@@ -1,7 +1,5 @@
 /* TODO */
-/* Make the first project tile bigger */
-/* Make generic project page to link to */
-/* Maybe bring in a small project or 2 (dice and B5 jumble) */
+
 /* Build responsive for tablet and desktop */
 /* Create README.md */
 
@@ -19,11 +17,6 @@ body {
 
 .n-f-padding {
     padding: 0.5rem;
-}
-
-p {
-    padding-top: 1rem;
-    line-height: 1.2rem;
 }
 
 /* BEGIN HEADER/NAV STYLING*/
@@ -80,10 +73,15 @@ header a {
 }
 /* END JUMBOTRON */
 
-/* BEGIN MAIN STYLING*/
+/* BEGIN MAIN/INDEX STYLING*/
 section {
-    width: 85%;
-    padding: 0.5rem;
+    width: 90%;
+    margin-top: 1rem;
+}
+
+.right-shadow {
+    border-right: 3px solid var(--primary-dark);
+    box-shadow: inset 0 0 10px 2.5px white;
 }
 
 .headshot-container {
@@ -95,25 +93,71 @@ section {
     width: 50%;
 }
 
-.project-container {
-    width: 100%;
+aside {
+    min-width: 20%;
+    padding-right: 10px;
+}
+
+.content {
+    margin-top: 1rem;
+}
+
+.content-container {
     gap: 0.75rem;
+}
+
+h2 {
+    line-height: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+p {
+    line-height: 1.2rem;
+    margin-bottom: 1rem;
+}
+.project-container {
+    gap: 0.5rem;
     margin-top: 0.5rem;
 }
 
+.first-tile {
+    width: 100%;
+    height: auto;
+}
+
+.first-tile img {
+    width: 225px;
+    height: 100px;
+    border: 2px solid var(--primary-dark);
+}
+
 .project-tile {
-    max-width: 30%;
+    width: 45%;
     height: auto;
 }
 
 .project-tile img {
-    width: 100%;
+    width: 100px;
+    height: 100px;
 }
 
 .project-tile p {
     line-height: 1.2rem;
 }
-/* END MAIN STYLING*/
+/* END MAIN/INDEX STYLING*/
+
+/* BEGIN PROJECT.HTML STYLING */
+.project-desc p {
+    margin-top: 1rem;
+}
+
+.project img {
+    width: 95%;
+}
+/* BEGIN PROJECT.HTML STYLING */
 
 /* BEGIN FOOTER STYLING*/
 footer {
@@ -122,13 +166,11 @@ footer {
 
 footer li {
     list-style-type: none;
-    font-size: 1.5rem;
 }
 
 footer a,
 footer p {
     color: var(--primary-light);
-    padding-top: 0.5rem;
 }
 /* END FOOTER STYLING*/
 

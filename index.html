@@ -55,84 +55,102 @@
                         alt=""
                     />
                 </div>
-                <div>
-                    <h2>About Me</h2>
-                    <p>
-                        Hi, I'm Mike Champion, I'm here to "champion" any web
-                        project you have to the finish line! (And, yes, I'm
-                        fluent in puns, word play, and dad jokes.)
-                    </p>
-                    <p>
-                        I completed the LC101 course at LaunchCode in 2017,
-                        where I learned Python, Java, MySQL, and refreshed my
-                        knowledge of HTML/CSS. Since then I've picked up Flexbox
-                        and a little JavaScript along the way. In June of 2020 I
-                        got my Trusted Tester certification which means I can
-                        diagnose accessibility issues on websites, aiming to fix
-                        them. While web development is a fairly new career
-                        aspiration for me, I have years of learning via Google
-                        for positions where I was the entire IT department and
-                        experience managing people and cultivating
-                        relationships.
-                    </p>
-                    <p>
-                        In my free time, I play tabletop board games (I play
-                        blue), which involves digging in and learning new rules,
-                        and explaining them to the group (and then re-explaining
-                        some rules the right way once we discover we've been
-                        doing something wrong).
-                    </p>
+                <div class="content-container flex row">
+                    <aside class="right-shadow">
+                        <h2>About Me</h2>
+                    </aside>
+                    <div class="content flex column">
+                        <p>
+                            Hi, I'm Mike Champion, I'm here to "champion" any
+                            web project you have to the finish line! (And, yes,
+                            I'm fluent in puns, word play, and dad jokes.)
+                        </p>
+                        <p>
+                            I completed the LC101 course at LaunchCode in 2017,
+                            where I learned Python, Java, MySQL, and refreshed
+                            my knowledge of HTML/CSS. Since then I've picked up
+                            Flexbox and a little JavaScript along the way. In
+                            June of 2020 I got my Trusted Tester certification
+                            which means I can diagnose accessibility issues on
+                            websites, aiming to fix them. While web development
+                            is a fairly new career aspiration for me, I have
+                            years of learning via Google for positions where I
+                            was the entire IT department and experience managing
+                            people and cultivating relationships.
+                        </p>
+                        <p>
+                            In my free time, I play tabletop board games (I play
+                            blue), which involves digging in and learning new
+                            rules, and explaining them to the group (and then
+                            re-explaining some rules the right way once we
+                            discover we've been doing something wrong).
+                        </p>
+                    </div>
                 </div>
             </section>
-            <section id="projects" class="flex column">
-                <h2>Projects<span> - Coming Soon!</span></h2>
-                <div class="project-container flex row-wrap space-evenly">
-                    <div class="project-tile">
-                        <a href="./project.html"
-                            ><img src="./assets/img/ComingSoon.jpg" alt=""
-                        /></a>
-                    </div>
-                    <div class="project-tile">
-                        <a href="./project.html"
-                            ><img src="./assets/img/ComingSoon.jpg" alt=""
-                        /></a>
-                    </div>
-                    <div class="project-tile">
-                        <a href="./project.html"
-                            ><img src="./assets/img/ComingSoon.jpg" alt=""
-                        /></a>
-                    </div>
-                    <div class="project-tile">
-                        <a href="./project.html"
-                            ><img src="./assets/img/ComingSoon.jpg" alt=""
-                        /></a>
+            <section id="projects" class="content-container flex row">
+                <aside class="right-shadow"><h2>Projects</h2></aside>
+                <div class="content flex column">
+                    <div class="project-container flex row-wrap space-evenly">
+                        <div class="first-tile flex center">
+                            <a href="./project.html"
+                                ><img
+                                    src="https://source.unsplash.com/random/450x200"
+                                    alt=""
+                            /></a>
+                        </div>
+                        <div class="project-tile flex center">
+                            <a href="./project.html"
+                                ><img
+                                    src="https://source.unsplash.com/random/300x300"
+                                    alt=""
+                            /></a>
+                        </div>
+                        <div class="project-tile flex center">
+                            <a href="./project.html"
+                                ><img
+                                    src="https://source.unsplash.com/random/250x250"
+                                    alt=""
+                            /></a>
+                        </div>
+                        <div class="project-tile flex center">
+                            <a href="./project.html"
+                                ><img
+                                    src="https://source.unsplash.com/random/400x400"
+                                    alt=""
+                            /></a>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
-        <footer id="footer" class="footer flex row space-between n-f-padding">
-            <ul class="flex row">
-                <li>
-                    <a href="https://github.com/MikeChampion" target="_blank"
-                        ><i class="ion-logo-github"></i
-                    ></a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.linkedin.com/in/mike-champion-868b8075/"
-                        target="_blank"
-                        ><i class="ion-logo-linkedin"></i
-                    ></a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.facebook.com/Rassilon007"
-                        target="_blank"
-                        ><i class="ion-logo-facebook"></i
-                    ></a>
-                </li>
-            </ul>
-            <p class="flex align-center">Mike Champion © 2021</p>
+        <footer id="footer" class="footer n-f-padding">
+            <div class="flex row space-between">
+                <ul class="flex row">
+                    <li>
+                        <a
+                            href="https://github.com/MikeChampion"
+                            target="_blank"
+                            ><i class="ion-logo-github"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.linkedin.com/in/mike-champion-868b8075/"
+                            target="_blank"
+                            ><i class="ion-logo-linkedin"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.facebook.com/Rassilon007"
+                            target="_blank"
+                            ><i class="ion-logo-facebook"></i
+                        ></a>
+                    </li>
+                </ul>
+                <p class="flex row">Mike Champion © 2021</p>
+            </div>
         </footer>
     </body>
 </html>
