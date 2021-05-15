@@ -1,24 +1,38 @@
+/* BEGIN CORE STYLING*/
 :root {
-    /*  --VARIABLE: VALUE;  */
     --primary-dark: rgb(0, 0, 110);
     --primary-light: rgb(196, 196, 196);
 }
 
 body {
     font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    max-width: 100vw;
 }
 
+.n-f-padding {
+    padding: 0.5rem;
+}
+
+/* BEGIN HEADER/NAV STYLING*/
 header {
+    width: 100vw;
     background: var(--primary-dark);
 }
 
-header li {
+ul {
+    gap: 10px;
+}
+
+li {
     list-style-type: none;
 }
 
 header a {
     color: var(--primary-light);
+    text-decoration: none;
 }
+/* END HEADER/NAV STYLING*/
 
 /* BEGIN JUMBOTRON */
 .jumbotron {
@@ -29,13 +43,7 @@ header a {
     background-color: #fff;
     background-size: cover;
     background-position: center;
-    margin-top: 3em;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
+    width: 100vw;
 }
 
 .jumbotron > p {
@@ -43,13 +51,10 @@ header a {
 }
 
 .j-backdrop {
-    background: rgba(71, 71, 71, 0.8);
+    background: rgba(71, 71, 71, 0.6);
     border-radius: 25px;
     color: #fff;
-    margin: 100px;
-    padding: 1em;
-    display: flex;
-    flex-flow: column nowrap;
+    margin: 25px;
 }
 
 .j-title {
@@ -65,25 +70,107 @@ header a {
 }
 /* END JUMBOTRON */
 
-.round {
-    border-radius: 50%;
+/* BEGIN MAIN STYLING*/
+section {
+    width: 85vw;
 }
 
+section p {
+    padding-top: 1rem;
+    line-height: 1.2rem;
+    /* margin-left: 2rem; */
+}
+
+.section-padding-top {
+    padding: 0.5rem;
+}
+
+.headshot-container {
+    padding: 0.5rem;
+}
+
+.headshot {
+    border-radius: 50%;
+    width: 50%;
+}
+
+.project-container {
+    width: 100%;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.project {
+    max-width: 30%;
+    height: auto;
+}
+
+.project img {
+    width: 100%;
+}
+
+.project p {
+    line-height: 1.2rem;
+}
+/* END MAIN STYLING*/
+
+/* BEGIN FOOTER STYLING*/
 footer {
     background: var(--primary-dark);
 }
 
 footer li {
     list-style-type: none;
+    font-size: 1.5rem;
 }
 
 footer a,
 footer p {
     color: var(--primary-light);
+    padding-top: 0.5rem;
+}
+/* END FOOTER STYLING*/
+
+/* Flexbox micro classes */
+.flex {
+    display: flex;
 }
 
-@media screen and (max-width: 767px) {
+.row {
+    flex-flow: row nowrap;
 }
 
-@media screen and (max-width: 479px) {
+.row-wrap {
+    flex-flow: row wrap;
+}
+
+.column {
+    flex-flow: column nowrap;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 480px) {
 }

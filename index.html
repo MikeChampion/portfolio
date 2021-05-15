@@ -17,12 +17,12 @@
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
         <title>Portfolio | Mike Champion</title>
     </head>
-    <body>
-        <header>
+    <body class="flex column">
+        <header class="flex column">
             <!-- begin nav -->
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Mike Champion</a></li>
+            <nav class="flex row space-between pad n-f-padding">
+                <a href="./index.html">Mike Champion</a>
+                <ul class="flex row">
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#footer">Contact</a></li>
@@ -30,23 +30,28 @@
             </nav>
             <!-- end nav -->
             <!-- begin jumbotron -->
-            <div class="jumbotron">
+            <div class="jumbotron flex column center">
                 <!--<img src="assets/img/banner.jpg" alt="">-->
-                <div class="j-backdrop">
+                <div class="j-backdrop flex column">
                     <p class="j-title">Mike Champion</p>
                     <p class="j-subtitle">
-                        Web Developer, Designer, Board Gamer
+                        Web Developer, Designer<br />Board Gamer
                     </p>
                 </div>
             </div>
             <!-- end jumbotron -->
         </header>
-        <main>
-            <section id="about">
-                <div>
-                    <img class="round" src="./assets/img/headshot.jpg" alt="" />
+        <main class="flex column center">
+            <section id="about" class="flex column center section-padding-top">
+                <div class="headshot-container flex center">
+                    <img
+                        class="headshot"
+                        src="./assets/img/headshot.jpg"
+                        alt=""
+                    />
                 </div>
-                <div class="content">
+                <div>
+                    <h2>About Me</h2>
                     <p>
                         Hi, I'm Mike Champion, I'm here to "champion" any web
                         project you have to the finish line! (And, yes, I'm
@@ -55,29 +60,45 @@
                     <p>
                         I completed the LC101 course at LaunchCode in 2017,
                         where I learned Python, Java, MySQL, and refreshed my
-                        knowledge of HTML/CSS. Since then I've picked up
-                        Flexbox, some Bootstrap and a little JavaScript, along
-                        the way. In June of 2020 I got my Trusted Tester
-                        certification so I can diagnose accessibility issues on
-                        websites, aiming to fix them. While web development is a
-                        fairly new career aspiration for me, I have years of
-                        learning via Google for positions where I was the entire
-                        IT department and experience managing people and
-                        cultivating relationships.
+                        knowledge of HTML/CSS. Since then I've picked up Flexbox
+                        and a little JavaScript along the way. In June of 2020 I
+                        got my Trusted Tester certification which means I can
+                        diagnose accessibility issues on websites, aiming to fix
+                        them. While web development is a fairly new career
+                        aspiration for me, I have years of learning via Google
+                        for positions where I was the entire IT department and
+                        experience managing people and cultivating
+                        relationships.
                     </p>
                     <p class="p3">
-                        In my free time, I play tabletop board games, which
-                        involves digging in and learning new rules, and
-                        explaining them to the group (and then re-explaining
+                        In my free time, I play tabletop board games (I play
+                        blue), which involves digging in and learning new rules,
+                        and explaining them to the group (and then re-explaining
                         some rules the right way once we discover we've been
                         doing something wrong).
                     </p>
                 </div>
             </section>
-            <section id="projects"></section>
+            <section id="projects" class="flex column section-padding-top">
+                <h2>Projects<span> - Coming Soon!</span></h2>
+                <div class="project-container flex row-wrap space-evenly">
+                    <div class="project">
+                        <img src="./assets/img/ComingSoon.jpg" alt="" />
+                    </div>
+                    <div class="project">
+                        <img src="./assets/img/ComingSoon.jpg" alt="" />
+                    </div>
+                    <div class="project">
+                        <img src="./assets/img/ComingSoon.jpg" alt="" />
+                    </div>
+                    <div class="project">
+                        <img src="./assets/img/ComingSoon.jpg" alt="" />
+                    </div>
+                </div>
+            </section>
         </main>
-        <footer id="footer" class="footer">
-            <ul>
+        <footer id="footer" class="footer flex row space-between n-f-padding">
+            <ul class="flex row">
                 <li>
                     <a href="https://github.com/MikeChampion" target="_blank"
                         ><i class="ion-logo-github"></i
@@ -98,7 +119,7 @@
                     ></a>
                 </li>
             </ul>
-            <p>Mike Champion © 2021</p>
+            <p class="flex align-center">Mike Champion © 2021</p>
         </footer>
     </body>
 </html>
