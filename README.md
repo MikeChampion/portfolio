@@ -14,7 +14,7 @@ Creating a repository on Github, and deploy the page to a live URL.
 
 ## II. Project screenshot
 
-![portfolio demo](./assets/images/mikechampion.github.io_portfolio_.jpg)
+![portfolio demo](https://github.com/MikeChampion/portfolio/blob/main/assets/img/portfolio.png)
 
 ## III. Link to deployed page
 
