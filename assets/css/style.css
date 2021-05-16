@@ -125,35 +125,23 @@ p {
 /* BEGIN PROJECTS STYLING */
 .projects {
     display: flex;
-    flex-flow: column;
+    flex-flow: column nowrap;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
 }
 
-.first-tile {
-    width: 90%;
-    height: auto;
-    position: relative;
-}
-
-.first-tile img {
-    width: 100%;
-    border: 3px solid rgb(0, 174, 255);
-}
-
-.first-project-tag {
-    background: rgb(0, 174, 255);
-    color: black;
-    padding: 0.25rem 0.5rem 0.25rem 0;
-    position: absolute;
-    bottom: -3%;
-    left: 5px;
-}
-
 .project-tile {
-    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
     height: auto;
     position: relative;
+}
+
+.project-tile a {
+    display: inline-block;
 }
 
 .project-tile img {
@@ -166,8 +154,8 @@ p {
     color: black;
     padding: 0.25rem 0.5rem 0.25rem 0;
     position: absolute;
-    bottom: -5%;
-    left: 5px;
+    bottom: -5px;
+    left: 8px;
 }
 
 .project-container p {
@@ -177,6 +165,29 @@ p {
 
 .proj-title {
     font-size: 1.2rem;
+}
+.first-tile {
+    padding: 0 10px;
+    position: relative;
+}
+
+.first-tile a {
+    display: inline-block;
+}
+
+.first-tile img {
+    width: 100%;
+    height: auto;
+    border: 3px solid rgb(0, 174, 255);
+}
+
+.first-project-tag {
+    background: rgb(0, 174, 255);
+    color: black;
+    padding: 0.25rem 0.5rem 0.25rem 0;
+    position: absolute;
+    bottom: -5px;
+    left: 18px;
 }
 /* END PROJECTS STYLING */
 /* END MAIN/INDEX STYLING*/
@@ -247,53 +258,30 @@ footer p {
 
     /* BEGIN PROJECTS STYLING */
     .projects {
+        display: flex;
         flex-flow: row wrap;
-        justify-content: center;
-        align-items: baseline;
-        margin-bottom: 0.75rem;
-    }
-
-    .first-tile {
-        width: 100%;
-    }
-
-    .first-project-tag {
-        bottom: -2%;
-        left: 10px;
+        align-items: space-evenly;
+        justify-content: space-evenly;
+        gap: 1rem;
     }
 
     .project-tile {
-        width: 10%;
+        width: 25%;
     }
-    .project-tag {
-        background: rgb(0, 174, 255);
-        color: black;
-        padding: 0.25rem 0.5rem 0.25rem 0;
-        position: absolute;
-        bottom: -3%;
-        left: 50px;
-    }
-    /* END MAIN/INDEX STYLING*/
 
-    /* BEGIN FOOTER STYLING*/
-    footer {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-around;
+    .first-tile {
+        width: 90%;
+        justify-content: center;
         align-items: center;
     }
-
-    footer li {
-        font-size: 1.5rem;
-    }
-    /* END FOOTER STYLING*/
+    /* END PROJECTS STYLING*/
 }
 /* END TABLET STYLING */
 
 /*--------------------------------------------------*/
 
 /* BEING DESKTOP STYLING */
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1024px) {
     /* BEGIN HEADER/NAV STYLING*/
     .n-f-padding {
         padding: 1rem;
@@ -332,34 +320,41 @@ footer p {
     /* END ABOUT STYLING */
 
     /* BEGIN PROJECTS STYLING */
-    .projects {
+    /*.projects {
+        display: flex;
         flex-flow: row wrap;
-        justify-content: center;
-        align-items: baseline;
-        margin-bottom: 1rem;
-    }
-
-    .first-tile {
-        width: 30%;
-    }
-
-    .first-project-tag {
-        bottom: -2%;
-        left: 10px;
+        align-items: space-evenly;
+        justify-content: space-evenly;
+        gap: 1rem;
     }
 
     .project-tile {
-        width: 30%;
-        margin-bottom: 1rem;
+        width: 25%;
     }
-    .project-tag {
-        background: rgb(0, 174, 255);
-        color: black;
-        padding: 0.25rem 0.5rem 0.25rem 0;
-        position: absolute;
-        bottom: -3%;
-        left: 50px;
+
+    .first-tile {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }*/
+
+    .projects {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
     }
+
+    .first-tile {
+        width: 50%;
+        padding: 0;
+    }
+
+    .project-tile {
+        width: 25%;
+    }
+
+    /* END PROJECTS STYLING*/
     /* END MAIN/INDEX STYLING*/
 
     /* BEGIN FOOTER STYLING*/
