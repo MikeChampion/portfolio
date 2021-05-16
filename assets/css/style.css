@@ -320,24 +320,6 @@ footer p {
     /* END ABOUT STYLING */
 
     /* BEGIN PROJECTS STYLING */
-    /*.projects {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: space-evenly;
-        justify-content: space-evenly;
-        gap: 1rem;
-    }
-
-    .project-tile {
-        width: 25%;
-    }
-
-    .first-tile {
-        width: 90%;
-        justify-content: center;
-        align-items: center;
-    }*/
-
     .projects {
         display: flex;
         flex-flow: row wrap;
@@ -352,6 +334,15 @@ footer p {
 
     .project-tile {
         width: 25%;
+    }
+
+    .first-project-tag {
+        background: rgb(0, 174, 255);
+        color: black;
+        padding: 0.25rem 0.5rem 0.25rem 0;
+        position: absolute;
+        bottom: -5px;
+        left: 10px;
     }
 
     /* END PROJECTS STYLING*/
