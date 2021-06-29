@@ -15,20 +15,37 @@
             type="text/css"
             href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css"
         />
-        <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+        <link
+            href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
         <link
             rel="stylesheet"
             type="text/css"
-            href="./assets/css/flex-style.css"
+            href="./assets/css/bgimage.css"
         />
+        <!-- <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/css/flex-style.css"
+        /> -->
         <title>Portfolio | Mike Champion</title>
     </head>
-    <body class="flex column">
-        <header class="flex column">
+    <body class="flex flex-col w-full">
+        <header class="flex flex-col w-full">
             <!-- begin nav -->
-            <nav class="flex row space-between pad n-f-padding">
-                <a href="./index.html">Mike Champion</a>
-                <ul class="flex row">
+            <nav
+                class="
+                    flex flex-row
+                    w-full
+                    justify-between
+                    p-2
+                    text-white
+                    bg-blue-900
+                "
+            >
+                <a href="./index.html" class="px-2">Mike Champion</a>
+                <ul class="flex flex-row px-2 gap-2">
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#footer">Contact</a></li>
@@ -36,30 +53,47 @@
             </nav>
             <!-- end nav -->
             <!-- begin jumbotron -->
-            <div class="jumbotron flex column center">
-                <div class="j-backdrop flex column">
-                    <h1 class="j-title">Mike Champion</h1>
-                    <p class="j-subtitle">
-                        Web Developer, Designer<br />Board Gamer
+            <div
+                id="jumbotron"
+                class="flex flex-col justify-center items-center"
+            >
+                <div
+                    class="
+                        flex flex-col
+                        justify-center
+                        items-center
+                        bg-gray-400 bg-opacity-75
+                        rounded-lg
+                        p-4
+                        m-8
+                        md:gap-4
+                    "
+                >
+                    <h1 class="flex flex-row font-bold">Mike Champion</h1>
+                    <p class="text-center">
+                        Web Developer, Design Thinker, Board Gamer
                     </p>
                 </div>
             </div>
             <!-- end jumbotron -->
         </header>
-        <main class="flex column center">
-            <section id="about" class="flex column center">
-                <div class="headshot-container flex center">
+        <main class="flex flex-col justify-center items-center w-full gap-4">
+            <section
+                id="about"
+                class="flex flex-col justify-center items-center w-11/12"
+            >
+                <div class="flex flex-col justify-center items-center py-4">
                     <img
-                        class="headshot"
+                        class="rounded-full w-1/2 md:w-3/4 lg:w-full"
                         src="./assets/img/headshot.jpg"
                         alt="My picture"
                     />
                 </div>
-                <div class="about-container flex row">
-                    <aside class="right-shadow">
+                <div class="flex flex-row gap-3">
+                    <div class="border-r-2 border-blue-700 pr-5">
                         <h2>About Me</h2>
-                    </aside>
-                    <div class="about flex column">
+                    </div>
+                    <div class="flex flex-col gap-1">
                         <p>
                             Hi, I'm Mike Champion, I'm here to "champion" any
                             web project you have to the finish line! (And, yes,
@@ -89,61 +123,180 @@
                 </div>
             </section>
 
-            <section id="projects" class="project-container flex row">
-                <aside class="right-shadow"><h2>Projects</h2></aside>
-                <div class="projects">
-                    <div class="first-tile">
-                        <a href="./project.html"
+            <section id="projects" class="flex flex-row gap-3 w-11/12">
+                <div class="border-r-2 border-blue-700 pr-2">
+                    <h2>Projects</h2>
+                </div>
+                <div
+                    id="projects-container"
+                    class="
+                        flex flex-col flex-wrap
+                        justify-center
+                        items-center
+                        gap-12
+                        pb-16
+                        md:pb-10
+                        lg:pb-6
+                        w-full
+                    "
+                >
+                    <div
+                        id="feature-project"
+                        class="flex justify-center items-center"
+                    >
+                        <a
+                            href="./project.html"
+                            class="
+                                border-2 border-blue-400
+                                w-11/12
+                                lg:w-full
+                                self-center
+                                relative
+                            "
                             ><img
-                                src="https://source.unsplash.com/random/600x300"
-                                alt="Random image"
-                        /></a>
-                        <div class="first-project-tag">
-                            <p class="proj-title">Project 1</p>
-                            <p>Stack</p>
-                        </div>
+                                src="./assets/img/projects/museum_hunter_sm.png"
+                                alt="Museum Hunter thumbnail"
+                            />
+                            <div
+                                class="
+                                    bg-blue-400
+                                    absolute
+                                    px-2
+                                    pb-2
+                                    top-3/4
+                                    left-1
+                                "
+                            >
+                                <p class="text-xl text-bold">Museum Hunter</p>
+                                <p class="text-xs pl-2">HTML / Tailwind CSS</p>
+                                <p class="text-xs pl-2">JavaScript / APIs</p>
+                            </div>
+                        </a>
                     </div>
 
-                    <div class="project-tile">
-                        <a href="./project.html" class=""
-                            ><img
-                                src="https://source.unsplash.com/random/300x300"
-                                alt="Random image"
-                        /></a>
-                        <div class="project-tag">
-                            <p class="proj-title">Project 2</p>
-                            <p>Stack</p>
+                    <div
+                        id="other-projects-container"
+                        class="
+                            flex flex-row flex-wrap
+                            justify-center
+                            md:justify-evenly
+                            items-center
+                            gap-12
+                            md:gap-4
+                            lg:gap-2
+                            w-full
+                        "
+                    >
+                        <div
+                            class="
+                                project
+                                flex flex-row
+                                justify-center
+                                items-center
+                                w-3/4
+                                md:w-2/5
+                                lg:w-1/4
+                                md:pb-8
+                            "
+                        >
+                            <a
+                                href="./project.html"
+                                class="
+                                    border-2 border-blue-400
+                                    self-center
+                                    relative
+                                "
+                                ><img
+                                    src="./assets/img/projects/weather_dashboard_sm.png"
+                                    alt="Weather Dashboard thumbnail"
+                                />
+                                <div
+                                    class="
+                                        bg-blue-400
+                                        absolute
+                                        px-2
+                                        pb-2
+                                        top-3/4
+                                        left-1
+                                    "
+                                >
+                                    <p class="text-lg text-bold">Weather App</p>
+                                    <p class="text-xs pl-2">HTML / CSS</p>
+                                    <p class="text-xs pl-2">JavaScript / API</p>
+                                </div></a
+                            >
                         </div>
-                    </div>
 
-                    <div class="project-tile">
-                        <a href="./project.html" class=""
-                            ><img
-                                src="https://source.unsplash.com/random/301x301"
-                                alt="Random image"
-                        /></a>
-                        <div class="project-tag">
-                            <p class="proj-title">Project 3</p>
-                            <p>Stack</p>
+                        <div
+                            class="
+                                project
+                                flex flex-row
+                                justify-center
+                                items-center
+                                w-3/4
+                                md:w-2/5
+                                lg:w-1/4
+                                md:pb-8
+                            "
+                        >
+                            <a
+                                href="./project.html"
+                                class="
+                                    border-2 border-blue-400
+                                    self-center
+                                    relative
+                                "
+                                ><img
+                                    src="./assets/img/projects/pword_generator_sm.png"
+                                    alt="Password Generator thumbnail"
+                                />
+                                <div
+                                    class="
+                                        bg-blue-400
+                                        absolute
+                                        px-2
+                                        pb-2
+                                        top-3/4
+                                        left-1
+                                    "
+                                >
+                                    <p class="text-lg text-bold">
+                                        Password Generator
+                                    </p>
+                                    <p class="text-xs pl-2">HTML / CSS</p>
+                                    <p class="text-xs pl-2">JavaScript</p>
+                                    <!-- https://mikechampion.github.io/Password_Generator/ -->
+                                </div></a
+                            >
                         </div>
-                    </div>
 
-                    <div class="project-tile">
-                        <a href="./project.html" class=""
-                            ><img
-                                src="https://source.unsplash.com/random/302x302"
-                                alt="Random image"
-                        /></a>
-                        <div class="project-tag">
-                            <p class="proj-title">Project 4</p>
-                            <p>Stack</p>
-                        </div>
+                        <!-- <div class="project-tile">
+                            <a href="./project.html" class=""
+                                ><img
+                                    src="https://source.unsplash.com/random/300x152"
+                                    alt="Random image"
+                            /></a>
+                            <div class="gen-project-tag">
+                                <p class="gen-proj-title">Project 4</p>
+                                <p>Stack</p>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
             </section>
         </main>
-        <footer id="footer" class="footer n-f-padding">
-            <ul class="flex row">
+        <footer
+            id="footer"
+            class="
+                flex flex-row
+                justify-between
+                items-center
+                p-2
+                bg-blue-900
+                text-white
+            "
+        >
+            <ul class="flex flex-row gap-2">
                 <li>
                     <a href="https://github.com/MikeChampion" target="_blank"
                         ><i class="ion-logo-github"></i
@@ -151,7 +304,7 @@
                 </li>
                 <li>
                     <a
-                        href="https://www.linkedin.com/in/mike-champion-868b8075/"
+                        href="https://www.linkedin.com/in/MikeChampion42/"
                         target="_blank"
                         ><i class="ion-logo-linkedin"></i
                     ></a>
