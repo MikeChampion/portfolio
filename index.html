@@ -19,16 +19,8 @@
             href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
             rel="stylesheet"
         />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="./assets/css/bgimage.css"
-        />
-        <!-- <link
-            rel="stylesheet"
-            type="text/css"
-            href="./assets/css/flex-style.css"
-        /> -->
+        <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+
         <title>Portfolio | Mike Champion</title>
     </head>
     <body class="flex flex-col w-full">
@@ -44,11 +36,11 @@
                     bg-blue-900
                 "
             >
-                <a href="./index.html" class="px-2">Mike Champion</a>
+                <a href="/index.html" class="px-2">Mike Champion</a>
                 <ul class="flex flex-row px-2 gap-2">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#footer">Contact</a></li>
+                    <li><a href="/index.html#about">About</a></li>
+                    <li><a href="/index.html#projects">Projects</a></li>
+                    <li><a href="/index.html#contact">Contact</a></li>
                 </ul>
             </nav>
             <!-- end nav -->
@@ -62,69 +54,133 @@
                         flex flex-col
                         justify-center
                         items-center
-                        bg-gray-400 bg-opacity-75
+                        bg-gray-400 bg-opacity-60
                         rounded-lg
                         p-4
+                        md:p-8
                         m-8
                         md:gap-4
                     "
                 >
-                    <h1 class="flex flex-row font-bold">Mike Champion</h1>
-                    <p class="text-center">
+                    <h1 class="flex flex-row font-extrabold text-3xl">
+                        Mike Champion
+                    </h1>
+                    <p class="text-center font-bold text-lg md:text-xl">
                         Web Developer, Design Thinker, Board Gamer
                     </p>
                 </div>
             </div>
             <!-- end jumbotron -->
         </header>
-        <main class="flex flex-col justify-center items-center w-full gap-4">
-            <section
-                id="about"
-                class="flex flex-col justify-center items-center w-11/12"
+        <main
+            class="
+                flex flex-col
+                justify-center
+                items-center
+                w-full
+                gap-4
+                lg:gap-6
+            "
+        >
+            <div
+                id="headshot"
+                class="flex flex-row justify-center items-center pt-4"
             >
-                <div class="flex flex-col justify-center items-center py-4">
-                    <img
-                        class="rounded-full w-1/2 md:w-3/4 lg:w-full"
-                        src="./assets/img/headshot.jpg"
-                        alt="My picture"
-                    />
+                <img
+                    class="rounded-full w-1/2 md:w-3/4 lg:w-full"
+                    src="./assets/img/headshot.jpg"
+                    alt="My picture"
+                />
+            </div>
+            <section id="about" class="flex flex-row gap-3 w-11/12">
+                <div
+                    class="
+                        flex
+                        justify-end
+                        md:pr-2
+                        border-r-2 border-blue-700
+                        w-1/4
+                        md:w-1/6
+                    "
+                >
+                    <h2>About Me</h2>
                 </div>
-                <div class="flex flex-row gap-3">
-                    <div class="border-r-2 border-blue-700 pr-5">
-                        <h2>About Me</h2>
-                    </div>
-                    <div class="flex flex-col gap-1">
-                        <p>
-                            Hi, I'm Mike Champion, I'm here to "champion" any
-                            web project you have to the finish line! (And, yes,
-                            I'm fluent in puns, word play, and dad jokes.)
-                        </p>
-                        <p>
-                            I completed the LC101 course at LaunchCode in 2017,
-                            where I learned Python, Java, MySQL, and refreshed
-                            my knowledge of HTML/CSS. Since then I've picked up
-                            Flexbox and a little JavaScript along the way. In
-                            June of 2020 I got my Trusted Tester certification
-                            which means I can diagnose accessibility issues on
-                            websites, aiming to fix them. While web development
-                            is a fairly new career aspiration for me, I have
-                            years of learning via Google for positions where I
-                            was the entire IT department and experience managing
-                            people and cultivating relationships.
-                        </p>
-                        <p>
-                            In my free time, I play tabletop board games (I play
-                            blue), which involves digging in and learning new
-                            rules, and explaining them to the group (and then
-                            re-explaining some rules the right way once we
-                            discover we've been doing something wrong).
-                        </p>
-                    </div>
+                <div
+                    class="
+                        flex flex-col
+                        justify-center
+                        items-start
+                        w-full
+                        gap-1
+                        md:gap-2
+                        lg:gap-4
+                    "
+                >
+                    <p>
+                        Hi, I'm Mike Champion, aspiring web developer with a
+                        focus on responsive design and accessibility. I am
+                        currently attending a full stack boot camp through
+                        Washington University.
+                    </p>
+                    <p>
+                        I have experience with HTML5, CSS3, JavaScript, NodeJS,
+                        Python, and Java. <br />I am certified in Section 508
+                        Trusted Tester accessibility testing through the
+                        Department of Homeland Security.
+                    </p>
+                    <p>
+                        In my free time, I play tabletop board games (I play
+                        blue), which involves digging in and learning new rules,
+                        and explaining them to the group (and then clarifying
+                        some rules once we discover we've been doing something
+                        wrong).
+                    </p>
+                </div>
+            </section>
+
+            <section id="contact" class="flex flex-row gap-3 w-11/12">
+                <div
+                    class="
+                        flex
+                        justify-end
+                        md:pr-2
+                        border-r-2 border-blue-700
+                        w-1/4
+                        md:w-1/6
+                    "
+                >
+                    <h2>Contact Me</h2>
+                </div>
+                <div class="flex flex-col justify-center items-start w-full">
+                    <p>
+                        Email:
+                        <a href="mailto:ChampionMike42@gmail.com"
+                            >ChampionMike42@gmail.com</a
+                        >
+                    </p>
+                    <a
+                        href="https://www.linkedin.com/in/MikeChampion42/"
+                        target="_blank"
+                        >LinkedIn profile</a
+                    >
+                    <a href="https://github.com/MikeChampion" target="_blank"
+                        >GitHub profile</a
+                    >
+                    <p>Resume:</p>
                 </div>
             </section>
 
             <section id="projects" class="flex flex-row gap-3 w-11/12">
-                <div class="border-r-2 border-blue-700 pr-2">
+                <div
+                    class="
+                        flex
+                        justify-end
+                        md:pr-2
+                        border-r-2 border-blue-700
+                        w-1/4
+                        md:w-1/6
+                    "
+                >
                     <h2>Projects</h2>
                 </div>
                 <div
@@ -145,7 +201,7 @@
                         class="flex justify-center items-center"
                     >
                         <a
-                            href="./project.html"
+                            href="./projects/museum.html"
                             class="
                                 border-2 border-blue-400
                                 w-11/12
@@ -200,7 +256,7 @@
                             "
                         >
                             <a
-                                href="./project.html"
+                                href="./projects/weather.html"
                                 class="
                                     border-2 border-blue-400
                                     self-center
@@ -240,7 +296,7 @@
                             "
                         >
                             <a
-                                href="./project.html"
+                                href="./projects/password-generator.html"
                                 class="
                                     border-2 border-blue-400
                                     self-center
@@ -269,18 +325,6 @@
                                 </div></a
                             >
                         </div>
-
-                        <!-- <div class="project-tile">
-                            <a href="./project.html" class=""
-                                ><img
-                                    src="https://source.unsplash.com/random/300x152"
-                                    alt="Random image"
-                            /></a>
-                            <div class="gen-project-tag">
-                                <p class="gen-proj-title">Project 4</p>
-                                <p>Stack</p>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </section>
@@ -289,6 +333,7 @@
             id="footer"
             class="
                 flex flex-row
+                lg:flex-col
                 justify-between
                 items-center
                 p-2
@@ -296,24 +341,24 @@
                 text-white
             "
         >
-            <ul class="flex flex-row gap-2">
-                <li>
+            <ul class="flex flex-row gap-2 lg:gap-4">
+                <li class="scale-125">
                     <a href="https://github.com/MikeChampion" target="_blank"
-                        ><i class="ion-logo-github"></i
+                        ><i class="ion-logo-github text-2xl"></i
                     ></a>
                 </li>
                 <li>
                     <a
                         href="https://www.linkedin.com/in/MikeChampion42/"
                         target="_blank"
-                        ><i class="ion-logo-linkedin"></i
+                        ><i class="ion-logo-linkedin text-2xl"></i
                     ></a>
                 </li>
                 <li>
                     <a
                         href="https://www.facebook.com/Rassilon007"
                         target="_blank"
-                        ><i class="ion-logo-facebook"></i
+                        ><i class="ion-logo-facebook text-2xl"></i
                     ></a>
                 </li>
             </ul>
