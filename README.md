@@ -11,6 +11,7 @@ IV. Contact information
 
 Week eight homework.  
 Updating my previously created portfolio page with project 1, and two homework assignments.
+Adding contact information.
 Updating the repository and deployed page on Github.
 
 ## II. Project screenshot
@@ -20,6 +21,7 @@ Updating the repository and deployed page on Github.
 ## III. Link to deployed page
 
 PDF resume
+https://mikechampion.github.io/portfolio/assets/pdf/Michael_Champion_Resume_0621.pdf
 
 Portfolio
 https://mikechampion.github.io/portfolio/
