@@ -16,7 +16,7 @@ Updating the repository and deployed page on Github.
 
 ## II. Project screenshot
 
-![portfolio demo]()
+![portfolio demo](./assets/img/portfolio2.png)
 
 ## III. Link to deployed page
 
