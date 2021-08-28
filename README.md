@@ -1,33 +1,34 @@
-# WashU Bootcamp Homework, Week Eight
+# WashU Bootcamp Homework, Week sixteen
 
 ## Table of Contents
 
-I. Description
-II. Project screenshot
-III. Link to deployed page
-IV. Contact information
+I. [Description](#description)  
+II. [Project screenshot](#screenshot)  
+III. [Link to deployed page](#live-page)  
+IV. [Contact information](#contact)
 
-## I. Description
+## <a id="description">I. Description</a>
 
-Week eight homework.  
-Updating my previously created portfolio page with project 1, and two homework assignments.
-Adding contact information.
-Updating the repository and deployed page on Github.
+Week sixteen homework.  
+Updating my previously created portfolio page with homework and projects completed since the last update in week eight.
+Updating pinned repositories and deployed page on Github.
 
-## II. Project screenshot
+## <a id="screenshot">II. Screenshot</a>
 
-![portfolio demo](./assets/img/portfolio2.png)
+![portfolio demo](./assets/img/portfolio3.png)
 
-## III. Link to deployed page
-
-PDF resume
-https://mikechampion.github.io/portfolio/assets/pdf/Michael_Champion_Resume_0621.pdf
+## <a id="live-page">III. Link to deployed page</a>
 
 Portfolio
 https://mikechampion.github.io/portfolio/
+
+## <a id="contact">IV. Contact</a>
 
 Linkedin profile
 https://www.linkedin.com/in/MikeChampion42
 
 Github profile
 https://github.com/MikeChampion
+
+PDF resume
+https://mikechampion.github.io/portfolio/assets/pdf/Michael_Champion_Resume_0621.pdf
