@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css"
+        />
+        <link
+            href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+        <title>Portfolio | Mike Champion</title>
+    </head>
+    <body class="flex flex-col w-full">
+        <header class="flex flex-col w-full">
+            <!-- begin nav -->
+            <nav
+                class="
+                    flex flex-row
+                    w-full
+                    justify-between
+                    p-2
+                    text-white
+                    bg-blue-900
+                "
+            >
+                <a href="../index.html" class="px-2">Mike Champion</a>
+                <ul class="flex flex-row px-2 gap-2">
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- end nav -->
+        </header>
+        <main class="flex flex-col justify-center items-center w-full gap-4">
+            <section
+                class="
+                    flex flex-col
+                    justify-center
+                    items-center
+                    gap-2
+                    md:gap-3
+                    lg:gp-4
+                "
+            >
+                <h1 class="text-2xl py-2">Employee Tracker</h1>
+                <div class="flex flex-col justify-center items-start w-3/4">
+                    <p class="pb-4">
+                        An app that allows you to look at a database of
+                        employees, departments and roles. Also let you add new
+                        departments / roles / employees, or update an employees
+                        role.
+                    </p>
+                    <p class="pb-4">
+                        This project utilizes HTML, CSS, and JavaScript for teh
+                        front-end.
+                        <br />The back-end uses NodeJS, Inquirer for terminal
+                        interface, mysql2 to connect to the database, and
+                        console.table to render the data to the terminal in a
+                        table format.
+                    </p>
+
+                    <p>
+                        <a
+                            href="https://github.com/MikeChampion/employee-tracker"
+                            target="_blank"
+                            class="underline text-blue-700 hover:text-red-500"
+                            >GitHub repository</a
+                        >
+                    </p>
+                    <p>
+                        Demo video
+                        <a
+                            href="https://drive.google.com/file/d/12qyylmoe-QySNLQyT67rIH4o2Z1IehNl/view"
+                            target="_blank"
+                            class="underline text-blue-700 hover:text-red-500"
+                            >here</a
+                        >
+                    </p>
+                </div>
+                <div class="flex flex-col justify-center items-center w-11/12">
+                    <p>Demo images</p>
+                    <img
+                        src="../assets/img/projects/employee_tracker_1_full.png"
+                        alt="Demo image of password generator"
+                        class="w-8/12 my-4 border-2 border-blue-400"
+                    />
+                    <br />
+                    <img
+                        src="../assets/img/projects/employee_tracker_2_full.png"
+                        alt="Demo image of password generator"
+                        class="w-8/12 my-4 border-2 border-blue-400"
+                    />
+                </div>
+            </section>
+        </main>
+        <footer
+            id="footer"
+            class="
+                flex flex-row
+                lg:flex-col
+                justify-between
+                items-center
+                p-2
+                bg-blue-900
+                text-white
+            "
+        >
+            <ul class="flex flex-row gap-2 lg:gap-4">
+                <li class="scale-125">
+                    <a href="https://github.com/MikeChampion" target="_blank"
+                        ><i class="ion-logo-github text-2xl"></i
+                    ></a>
+                </li>
+                <li>
+                    <a
+                        href="https://www.linkedin.com/in/MikeChampion42/"
+                        target="_blank"
+                        ><i class="ion-logo-linkedin text-2xl"></i
+                    ></a>
+                </li>
+                <li>
+                    <a
+                        href="https://www.facebook.com/Rassilon007"
+                        target="_blank"
+                        ><i class="ion-logo-facebook text-2xl"></i
+                    ></a>
+                </li>
+            </ul>
+            <p class="flex row">Mike Champion © 2021</p>
+        </footer>
+    </body>
+</html>
