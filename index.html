@@ -193,6 +193,7 @@
                     "
                 >
                     <h2>Projects</h2>
+                    <!-- All images are w300 x h150, 72dpi -->
                 </div>
                 <div
                     id="projects-container"
@@ -209,10 +210,15 @@
                 >
                     <div
                         id="feature-project"
-                        class="flex justify-center items-center"
+                        class="
+                            flex
+                            justify-center
+                            items-center
+                            md:px-20 md:py-5 md:bg-blue-700 md:rounded-xl
+                        "
                     >
                         <a
-                            href="./projects/museum.html"
+                            href="./projects/tech-blog.html"
                             class="
                                 border-2 border-blue-400
                                 w-11/12
@@ -221,8 +227,8 @@
                                 relative
                             "
                             ><img
-                                src="./assets/img/projects/museum_hunter_sm.png"
-                                alt="Museum Hunter thumbnail"
+                                src="./assets/img/projects/tech_blog_sm.png"
+                                alt="Tech Blog thumbnail"
                             />
                             <div
                                 class="
@@ -230,13 +236,19 @@
                                     absolute
                                     px-2
                                     pb-2
-                                    top-3/4
+                                    top-16
+                                    md:top-20
+                                    lg:top-24
                                     left-1
                                 "
                             >
-                                <p class="text-xl text-bold">Museum Hunter</p>
-                                <p class="text-xs pl-2">HTML / Tailwind CSS</p>
-                                <p class="text-xs pl-2">JavaScript / APIs</p>
+                                <p class="text-xl text-bold">Tech Blog</p>
+                                <p class="text-xs pl-2">
+                                    HTML / TailwindCSS / JS
+                                </p>
+                                <p class="text-xs pl-2">
+                                    NodeJS / APIs / Express / MySQL
+                                </p>
                             </div>
                         </a>
                     </div>
@@ -254,6 +266,291 @@
                             w-full
                         "
                     >
+                        <!-- E-comm backend -->
+                        <div
+                            class="
+                                project
+                                flex flex-row
+                                justify-center
+                                items-center
+                                w-3/4
+                                md:w-2/5
+                                lg:w-1/4
+                                md:pb-8
+                            "
+                        >
+                            <a
+                                href="./projects/ecommerce-backend.html"
+                                class="
+                                    border-2 border-blue-400
+                                    self-center
+                                    relative
+                                "
+                                ><img
+                                    src="./assets/img/projects/ecommerce_backend_sm.png"
+                                    alt="Ecommerce Backend thumbnail"
+                                />
+                                <div
+                                    class="
+                                        bg-blue-400
+                                        absolute
+                                        px-2
+                                        pb-2
+                                        top-16
+                                        md:top-20
+                                        lg:top-24
+                                        left-1
+                                    "
+                                >
+                                    <p class="text-lg text-bold w-max">
+                                        E-Commerce Back-end
+                                    </p>
+                                    <p class="text-xs pl-2">
+                                        HTML / CSS / JS / Express
+                                    </p>
+                                    <p class="text-xs pl-2">
+                                        Sequelize / MySQL2 / dotenv
+                                    </p>
+                                </div></a
+                            >
+                        </div>
+
+                        <!-- Team builder -->
+                        <div
+                            class="
+                                project
+                                flex flex-row
+                                justify-center
+                                items-center
+                                w-3/4
+                                md:w-2/5
+                                lg:w-1/4
+                                md:pb-8
+                            "
+                        >
+                            <a
+                                href="./projects/team-builder.html"
+                                class="
+                                    border-2 border-blue-400
+                                    self-center
+                                    relative
+                                "
+                                ><img
+                                    src="./assets/img/projects/team_builder_sm.png"
+                                    alt="Team Builder thumbnail"
+                                />
+                                <div
+                                    class="
+                                        bg-blue-400
+                                        absolute
+                                        px-2
+                                        pb-2
+                                        top-16
+                                        md:top-20
+                                        lg:top-24
+                                        left-1
+                                    "
+                                >
+                                    <p class="text-lg text-bold w-max">
+                                        Team Builder
+                                    </p>
+                                    <p class="text-xs pl-2">HTML / CSS / JS</p>
+                                    <p class="text-xs pl-2">Inquirer / Jest</p>
+                                </div></a
+                            >
+                        </div>
+
+                        <!-- Emp tracker -->
+                        <div
+                            class="
+                                project
+                                flex flex-row
+                                justify-center
+                                items-center
+                                w-3/4
+                                md:w-2/5
+                                lg:w-1/4
+                                md:pb-8
+                            "
+                        >
+                            <a
+                                href="./projects/employee-tracker.html"
+                                class="
+                                    border-2 border-blue-400
+                                    self-center
+                                    relative
+                                "
+                                ><img
+                                    src="./assets/img/projects/employee_tracker_sm.png"
+                                    alt="Employee Tracker thumbnail"
+                                />
+                                <div
+                                    class="
+                                        bg-blue-400
+                                        absolute
+                                        px-2
+                                        pb-2
+                                        top-16
+                                        md:top-20
+                                        lg:top-24
+                                        left-1
+                                    "
+                                >
+                                    <p class="text-lg text-bold w-max">
+                                        Employee Tracker
+                                    </p>
+                                    <p class="text-xs pl-2">
+                                        HTML / CSS / JS / MySQL2
+                                    </p>
+                                    <p class="text-xs pl-2">
+                                        Inquirer / console.table
+                                    </p>
+                                </div></a
+                            >
+                        </div>
+
+                        <!-- Note Taker -->
+                        <div
+                            class="
+                                project
+                                flex flex-row
+                                justify-center
+                                items-center
+                                w-3/4
+                                md:w-2/5
+                                lg:w-1/4
+                                md:pb-8
+                            "
+                        >
+                            <a
+                                href="./projects/note-taker.html"
+                                class="
+                                    border-2 border-blue-400
+                                    self-center
+                                    relative
+                                "
+                                ><img
+                                    src="./assets/img/projects/note_taker_sm.png"
+                                    alt="Note Taker thumbnail"
+                                />
+                                <div
+                                    class="
+                                        bg-blue-400
+                                        absolute
+                                        px-2
+                                        pb-2
+                                        top-16
+                                        md:top-20
+                                        lg:top-24
+                                        left-1
+                                    "
+                                >
+                                    <p class="text-lg text-bold w-max">
+                                        Note Taker
+                                    </p>
+                                    <p class="text-xs pl-2">HTML / CSS / JS</p>
+                                    <p class="text-xs pl-2">Express / UUID</p>
+                                </div></a
+                            >
+                        </div>
+
+                        <!-- README Generator -->
+                        <div
+                            class="
+                                project
+                                flex flex-row
+                                justify-center
+                                items-center
+                                w-3/4
+                                md:w-2/5
+                                lg:w-1/4
+                                md:pb-8
+                            "
+                        >
+                            <a
+                                href="./projects/readme-generator.html"
+                                class="
+                                    border-2 border-blue-400
+                                    self-center
+                                    relative
+                                "
+                                ><img
+                                    src="./assets/img/projects/readme_sm.png"
+                                    alt="Password Generator thumbnail"
+                                />
+                                <div
+                                    class="
+                                        bg-blue-400
+                                        absolute
+                                        px-2
+                                        pb-2
+                                        top-16
+                                        md:top-20
+                                        lg:top-24
+                                        left-1
+                                    "
+                                >
+                                    <p class="text-lg text-bold w-max">
+                                        README Generator
+                                    </p>
+                                    <p class="text-xs pl-2">HTML / CSS</p>
+                                    <p class="text-xs pl-2">
+                                        NodeJS / Inquirer
+                                    </p>
+                                </div></a
+                            >
+                        </div>
+
+                        <!-- Museum Hunter -->
+                        <div
+                            class="
+                                project
+                                flex flex-row
+                                justify-center
+                                items-center
+                                w-3/4
+                                md:w-2/5
+                                lg:w-1/4
+                                md:pb-8
+                            "
+                        >
+                            <a
+                                href="./projects/museum.html"
+                                class="
+                                    border-2 border-blue-400
+                                    self-center
+                                    relative
+                                "
+                                ><img
+                                    src="./assets/img/projects/museum_hunter_sm.png"
+                                    alt="Museum Hunter thumbnail"
+                                />
+                                <div
+                                    class="
+                                        bg-blue-400
+                                        absolute
+                                        px-2
+                                        pb-2
+                                        top-16
+                                        md:top-20
+                                        lg:top-24
+                                        left-1
+                                    "
+                                >
+                                    <p class="text-lg text-bold w-max">
+                                        Museum Hunter
+                                    </p>
+                                    <p class="text-xs pl-2">
+                                        HTML / Tailwind CSS
+                                    </p>
+                                    <p class="text-xs pl-2">
+                                        JavaScript / APIs
+                                    </p>
+                                </div></a
+                            >
+                        </div>
+
+                        <!-- Weather -->
                         <div
                             class="
                                 project
@@ -283,17 +580,22 @@
                                         absolute
                                         px-2
                                         pb-2
-                                        top-3/4
+                                        top-16
+                                        md:top-20
+                                        lg:top-24
                                         left-1
                                     "
                                 >
-                                    <p class="text-lg text-bold">Weather App</p>
+                                    <p class="text-lg text-bold w-max">
+                                        Weather App
+                                    </p>
                                     <p class="text-xs pl-2">HTML / CSS</p>
                                     <p class="text-xs pl-2">JavaScript / API</p>
                                 </div></a
                             >
                         </div>
 
+                        <!-- Password Gen -->
                         <div
                             class="
                                 project
@@ -323,16 +625,17 @@
                                         absolute
                                         px-2
                                         pb-2
-                                        top-3/4
+                                        top-16
+                                        md:top-20
+                                        lg:top-24
                                         left-1
                                     "
                                 >
-                                    <p class="text-lg text-bold">
+                                    <p class="text-lg text-bold w-max">
                                         Password Generator
                                     </p>
                                     <p class="text-xs pl-2">HTML / CSS</p>
                                     <p class="text-xs pl-2">JavaScript</p>
-                                    <!-- https://mikechampion.github.io/Password_Generator/ -->
                                 </div></a
                             >
                         </div>
